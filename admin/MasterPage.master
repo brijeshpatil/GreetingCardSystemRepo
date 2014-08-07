@@ -1,0 +1,273 @@
+<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_lp2nhttw" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>greeting Cards - The Best you can find in the net</title>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <body>
+        
+        <table border="0" cellpadding="0" cellspacing="0" align="center">
+	        <tr>
+		      <!--  <td height="143" width="240"><a href="#">
+		            <img src="images/logo.gif" width="200" border="0" alt="Your company name" 
+                        style="height: 81px" /></a>
+		        </td>
+		        <td width="403">
+        			
+		        </td>
+		        <td><img src="images/spacer.gif" width="5" height="1" border="0" alt="" /></td>
+		        -->
+		        <td>
+		            <img src="images/logo1.png" />
+		        </td>
+		        
+	        </tr>
+        </table>
+        
+        <table border="0" cellpadding="0" cellspacing="0" align="center">
+	        <tr>
+		        <td><img src="images/menu_left.gif" width="7" height="40" border="0" alt="" /></td>
+		        <td width="835" style="background: url(images/menu_bg.gif)" align="center"  >
+        		
+        		
+			        <table border="0" cellpadding="0" cellspacing="0">
+				        <tr>
+					       
+					        <td>
+					            <div style="padding: 0 6px 0 7px">
+					                <input type="text" name="search" size="40" maxlength="256" class="search" value="search" />
+					            </div>
+					        </td>
+					        <td>
+					            <input type="image" src="images/menu_go.gif" border="0" width="38" height="28" alt="" />
+					        </td>
+					         
+					        <td>
+					            <div class="mb">Home</div> <div class="mw"><a href="index.aspx" class="aw">Home</a>
+					            </div>
+					        </td>
+					         <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+					        <td>
+					            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+					        </td>
+					        <td>
+					            <div class="mb">New Cards</div> <div class="mw"><a href="newcards.aspx" class="aw">New Cards</a>
+					            </div>
+					        </td>
+					        
+				
+			    	        <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+					        
+					        <td>
+					            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+					        </td>
+					        <td>
+					            <div class="mb">Write To Us</div> <div class="mw"><a href="feedback.aspx" class="aw">Write To Us</a>
+					            </div>
+					        </td>
+					         <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+					         <td>
+					            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+					        </td>
+					        <td>
+					            <div class="mb">Login</div> <div class="mw"><a href="login.aspx" class="aw">Login</a>
+					            </div>
+					        </td>
+					         <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+					        <td>
+					            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+					        </td>
+					        <td>
+					            <div class="mb">New User</div> <div class="mw"><a href="newuser.aspx" class="aw">New User</a>
+					            </div>
+					        </td>
+        					 <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+			    	         <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+        					<td>
+					            <div class="mb">Contact Us</div> <div class="mw"><a href="contactus.aspx" class="aw">Contact Us</a>
+					            </div>
+					        </td>
+					        <td>
+			    	            <img src="images/menu_line.gif" width="2" height="29" border="0" alt="" hspace="13" />
+			    	        </td>
+					        <td>
+					            <a href="logout.aspx"><asp:Label Visible="false" Font-Size="8" runat="server" ID="logout" Text="Logout"></asp:Label></a>
+					        </td>
+				        </tr>
+			        </table>
+        		
+		        </td>
+		        <td><img src="images/menu_right.gif" width="6" height="40" border="0" alt="" /></td>
+	        </tr>
+        </table>
+        
+         <div>
+            <img src="images/spacer.gif" width="1" height="9" border="0" alt="" />
+         </div>
+        <div id="body1">
+        <table border="0" cellpadding="0" cellspacing="0">
+	        <tr>
+		        <td valign="top">
+			        <table border="0" cellpadding="0" cellspacing="0"  style="background: url(images/left_bg.gif)">
+				        <tr>
+					        <td><img src="images/left_left.gif" width="21" height="29" border="0" alt="" /></td>
+					        <td><img src="images/spacer.gif" width="7" height="1" border="0" alt="" /></td>
+					        <td width="170"><div class="lb">BROWSE BY CATEGORIES</div> <div class="lw">BROWSE BY CATEGORIES</div></td>
+					        <td><img src="images/left_right.gif" width="6" height="29" border="0" alt="" /></td>
+				        </tr>
+			        </table>
+			        <table border="0" cellpadding="0" cellspacing="0">
+			   	        <tr>
+			   	        
+					        <td style="background: url(images/c_left.gif)">
+					            <img src="images/spacer.gif" width="1" height="1" border="0" alt="" />
+					        </td>
+					        
+					        <td width="194" align="center">
+        						
+						        <table border="0" cellpadding="0" cellspacing="0" id="lmenu1">
+							        <tr>
+								        <td><div class="lmenu">
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="feelings.aspx" class="top11">Feelings</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="birthday.aspx" class="top11">Birthday</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="milestones.aspx" class="top11">Milestones</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="festivals.aspx" class="top11">Festivals</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="specialdays.aspx" class="top11">Special Days</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="season.aspx" class="top11">Seasons Greetings</a>
+								            <div><img src="images/line_h2.gif" width="186" height="1" border="0" alt="" /></div>
+								            <img src="images/ico2.gif" width="7" height="5" border="0" alt="" hspace="6" /><a href="misc.aspx" class="top11">Miscellaneous</a>
+								        </div></td>
+							        </tr>
+						        </table>
+					        </td>
+			   		        <td style="background: url(images/c_right.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+			   	        </tr>
+				        <tr>
+					        <td><img src="images/c4.gif" width="5" height="5" border="0" alt="" /></td>
+					        <td style="background: url(images/c_bot.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td><img src="images/c3.gif" width="5" height="5" border="0" alt="" /></td>
+				        </tr>
+			        </table>
+			        
+			         <div><img src="images/spacer.gif" width="1" height="7" border="0" alt="" /></div>
+			        <table border="0" cellpadding="0" cellspacing="0">
+				        <tr>
+					        <td><img src="images/c1.gif" width="5" height="5" border="0" alt="" /></td>
+					        <td style="background: url(images/c_top.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td><img src="images/c2.gif" width="5" height="5" border="0" alt="" /></td>
+				        </tr>
+				        <tr>
+					        <td style="background: url(images/c_left.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td width="194" align="center">
+        					
+        					<img src="img/birthday_cake.png" width="90" height="82" border="0" alt="" /><br />
+					        <div style="font-size:18px;">Check out just added Special<br /> 
+					           <a href="birthday.aspx">Birthday Cards </a><br />
+					            to send to India.</div>
+        					
+					        </td>
+					        <td style="background: url(images/c_right.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+				        </tr>
+				        <tr>
+					        <td><img src="images/c4.gif" width="5" height="5" border="0" alt="" /></td>
+					        <td style="background: url(images/c_bot.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td><img src="images/c3.gif" width="5" height="5" border="0" alt="" /></td>
+				        </tr>
+			        </table>
+			        <div><img src="images/spacer.gif" width="1" height="7" border="0" alt="" /></div>
+			        <table border="0" cellpadding="0" cellspacing="0">
+				        <tr>
+					        <td><img src="images/c1.gif" width="5" height="5" border="0" alt="" /></td>
+					        <td style="background: url(images/c_top.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td><img src="images/c2.gif" width="5" height="5" border="0" alt="" /></td>
+				        </tr>
+				        <tr>
+					        <td style="background: url(images/c_left.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td width="194" align="center">
+        					
+					        <a href="#"><img src="images/so_img.jpg" width="116" height="112" border="0" alt="" /></a>
+					        <div style="padding: 9px 0 4px 0"><img src="images/so.gif" width="137" height="15" border="0" alt="" /></div>
+					        <div class="so"><b>Morbi nunc odi gravida.</b></div>
+        					
+					        </td>
+					        <td style="background: url(images/c_right.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+				        </tr>
+				        <tr>
+					        <td><img src="images/c4.gif" width="5" height="5" border="0" alt="" /></td>
+					        <td style="background: url(images/c_bot.gif)"><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+					        <td><img src="images/c3.gif" width="5" height="5" border="0" alt="" /></td>
+				        </tr>
+			        </table>
+		        </td>
+		        <td><img src="images/spacer.gif" width="4" height="1" border="0" alt="" /></td>
+		        <td valign="top">
+		            <center><asp:Label Font-Size="10" Text="" runat="server" ID="user" Visible="false"></asp:Label></center>
+        			<form id="form1" runat="server">
+                        <div>
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            
+                                
+
+                            
+                            </asp:ContentPlaceHolder>
+                        </div>
+                     </form>
+			       
+		        </td>
+	        </tr>
+        </table>
+        </div>
+        
+    
+        
+        
+        
+        <div>
+            <img src="images/spacer.gif" width="1" height="9" border="0" alt="" />
+        </div>
+        <table border="0" cellpadding="0" cellspacing="0" style="background: #767F82" width="845" align="center">
+        	<tr>		
+        	    <td>
+        	        <img src="images/bot_left.gif" width="3" height="7" border="0" alt="" />
+        	    </td>
+        	    <td align="right">
+        	        <a href="images/img.html"><img src="images/bot_right.gif" width="4" height="7" border="0" alt="" /></a>
+        	    </td>	
+        	</tr>
+        </table>
+        <center><a href="admin_login.aspx">Admin</a></center>
+        <div>
+            <img src="images/spacer.gif" width="1" height="6" border="0" alt="" />
+        </div>
+        
+        
+    </body>
+</html>
